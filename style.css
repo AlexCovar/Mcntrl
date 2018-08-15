@@ -2,29 +2,36 @@
 .item3 { grid-area: main; }
 .item4 { grid-area: right; }
 .item5 { grid-area: footer; }
-
+body{
+  margin: 0;
+}
+.item1{
+  width: 97.5vw
+}
 .grid-container {
     display: grid;
     grid-template-areas:
         'header header header header header header'
         'main main main right right right'
         'footer footer footer footer footer footer';
-  grid-gap: 10px;
+    grid-gap: 10px;
     background-color: #2196F3;
-    padding: 10px;
+    padding: 0;
+    width: 97.5vw;
 }
 .item3 {
     width:684px;
 }
 .item4 {
-    width:684px;
+    width:640px;
 }
 .program-text {
     font-size:18px;
-    
+    width:80%;
 }
 .program-name {
     font-size:27px;
+    width:80%;
 }
 .program-image-left {
     width:200px;
@@ -46,7 +53,7 @@
     margin-left:900px;
 }
 .grid-container > div {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: lightblue;
     text-align: center;
     padding: 20px 0;
     font-size: 30px;
@@ -110,5 +117,19 @@
 }
 .item5{
   display: flex;
+  justify-content: center;
   align-items: center;
+  
+}
+.container {
+    overflow: hidden;
+}
+
+.filterDiv {
+    display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
 }
